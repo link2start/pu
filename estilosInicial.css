@@ -1,0 +1,116 @@
+/* Reset de margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: rgb(37, 30, 30);
+    padding: 0.4cm 0;
+    position: fixed;
+    top: 1cm;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu ul li a {
+    font-size: 15px; /* Aumenta o tamanho do texto do menu */
+    font-family: 'Arial', sans-serif; /* Altere 'Roboto' para a fonte desejada */
+    text-shadow: 1px 1px 2px rgba(236, 17, 17, 1); /* Adiciona uma sombra sutil ao texto */
+}
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff5722; /* Cor laranja para realçar o hover */
+}
+
+/* Estilos para o plano de fundo */
+.background {
+    background-image: url('imagem10.jpg');
+    background-size: 50% 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Estilos para o conteúdo principal */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.link-start {
+    font-size: 147px;
+    text-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
+    animation: glow 2s infinite alternate;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.description {
+    margin-top: 0.1cm;
+    font-size: 33px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 87, 34, 1), 0 0 30px rgba(255, 87, 34, 1), 0 0 40px rgba(255, 87, 34, 1), 0 0 50px rgba(255, 87, 34, 1), 0 0 60px rgba(255, 87, 34, 1);
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #ff5722; /* Cor laranja para realçar o hover */
+}
